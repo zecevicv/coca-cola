@@ -31,3 +31,38 @@ if (document.querySelector('#homeVirtualTour')) {
     }
   });
 }
+
+/* #Timeline Bottles Slider
+================================================== */
+if (document.querySelector('.timeline-bottles')) {
+  var swiper = new Swiper('.timeline-bottles .swiper-container', {
+    slidesPerView: 4.6,
+    centeredSlides: true,
+    loop: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1.5
+      },
+      1024: {
+        slidesPerView: 4.6,
+      }
+    }
+  });
+}
+
+/* #Timeline Years Slider
+================================================== */
+if (document.querySelector('.timeline-years')) {
+  var swiper = new Swiper('.timeline-years .swiper-container', {
+    slidesPerView: 4,
+    loop: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1.25
+      },
+      1024: {
+        slidesPerView: 4,
+      }
+    }
+  });
+}
