@@ -797,6 +797,34 @@ h6 {
   }
 }
 
+/* #Virtual Tour Page
+================================================== */
+.virtual-tour-page {
+  min-height: calc(100vh - 3.17vw);
+  background-color: #da2728;
+  position: relative;
+}
+
+.virtual-tour-page .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 8.6vw;
+  left: 0;
+  width: 100%;
+}
+
+@media (max-width: 1023.98px) {
+  .virtual-tour-page {
+    min-height: calc(100vh - 13vw);
+  }
+
+  .virtual-tour-page .text {
+    bottom: 10vw;
+  }
+}
+
 /* #Component - Years
 ================================================== */
 .component-years {
