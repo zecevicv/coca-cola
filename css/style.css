@@ -1425,7 +1425,6 @@ h6 {
 
 .visitors-center-faq li {
   border: 0.15vw solid white;
-  padding: 0.78vw;
   transition: all .3s ease;
 }
 
@@ -1443,6 +1442,7 @@ h6 {
   align-items: center;
   cursor: pointer;
   user-select: none;
+  padding: 0.78vw;
 }
 
 .visitors-center-faq .collapse-toggler .simbol {
@@ -1452,7 +1452,7 @@ h6 {
 }
 
 .visitors-center-faq .collapse {
-  padding-top: 0.78vw;
+  padding: 0 0.78vw 0.78vw 0.78vw;
 }
 
 @media (max-width: 1023.98px) {
