@@ -81,3 +81,21 @@ if (document.querySelector('.visitors-center-faq .faqs')) {
     });
   });
 }
+
+/* #DIY Slider
+======================================================= */
+const diyNavSlider = new Swiper('.diy-navigation .swiper-container', {
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  allowTouchMove: false,
+  breakpoints: {
+    0: {
+      slidesPerView: 4,
+      allowTouchMove: true,
+    },
+    1024: {
+      slidesPerView: 4,
+      allowTouchMove: false,
+    }
+  },
+});
