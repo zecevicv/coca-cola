@@ -132,6 +132,10 @@ button {
   }
 }
 
+.text-center {
+  text-align: center!important;
+}
+
 /* Vue Animation - Fade */
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s ease;
@@ -1220,6 +1224,64 @@ h6 {
 
   .timeline-footer ul img {
     width: 100%;
+  }
+}
+
+/* #Terms / Privacy / Accessibility
+================================================== */
+.terms-page,
+.privacy-page,
+.accessibility-page {
+  background-color: #eb2d2e;
+  color: white;
+  min-height: calc(100vh - 3.17vw);
+  padding-top: 1.56vw;
+}
+
+.terms-page .container,
+.privacy-page .container,
+.accessibility-page .container {
+  width: 46%;
+}
+
+.terms-page h1,
+.privacy-page h1,
+.accessibility-page h1 {
+  text-align: center;
+  margin-bottom: 1vw;
+}
+
+.terms-page p,
+.privacy-page p,
+.accessibility-page p {
+  margin-bottom: 2.85vw;
+}
+
+@media (max-width: 1023.98px) {
+  .terms-page,
+  .privacy-page,
+  .accessibility-page {
+    min-height: calc(100vh - 13vw);
+    padding-top: 10.6vw;
+    padding-bottom: 10.6vw;
+  }
+
+  .terms-page .container,
+  .privacy-page .container,
+  .accessibility-page .container {
+    width: 92%;
+  }
+
+  .terms-page h1,
+  .privacy-page h1,
+  .accessibility-page h1 {
+    margin-bottom: 8.6vw;
+  }
+
+  .terms-page p,
+  .privacy-page p,
+  .accessibility-page p {
+    margin-bottom: 13.3vw;
   }
 }
 
