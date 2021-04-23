@@ -66,3 +66,18 @@ if (document.querySelector('.timeline-years')) {
     }
   });
 }
+
+/* #Visitors Center
+================================================== */
+if (document.querySelector('.visitors-center-faq .faqs')) {
+  const faqs = document.querySelectorAll('.visitors-center-faq .faq');
+
+  faqs.forEach((faq) => {
+    new Vue({
+      el: faq,
+      data: {
+        open: false
+      }
+    });
+  });
+}
