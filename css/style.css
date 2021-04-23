@@ -1494,9 +1494,14 @@ h6 {
   background-image: url('../img/diy/diy-bg.jpg');
   background-position: top right;
   background-repeat: repeat;
-  background-size: cover;
+}
+
+.diy > .container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 2vw 0 0 0;
   min-height: calc(100vh - 3.17vw);
-  padding: 2vw 0;
 }
 
 .diy .container > h1,
@@ -1509,14 +1514,24 @@ h6 {
   margin-bottom: 2.3vw;
 }
 
+.diy .component-video-slider {
+  background: transparent;
+}
+
 @media (max-width: 1023.98px) {
-  .diy {
-    padding: 10vw 0;
+  .diy > .container {
+    padding: 10vw 0 0 0;
     min-height: calc(100vh - 13vw);
   }
 
   .diy .container > h1 {
     margin-bottom: 5vw;
+  }
+
+  .diy .container > h1,
+  .diy .container > p {
+    text-align: right;
+    padding-right: 4%;
   }
 }
 
@@ -1639,7 +1654,7 @@ h6 {
     padding-right: 0;
   }
 
-  .diy-videos li:not(:last-child) {
+  .diy-videos li {
     margin-bottom: 2vw;
   }
 
@@ -1663,6 +1678,127 @@ h6 {
   .diy-videos li .text {
     bottom: 1.5vw;
     right: 2vw;
+  }
+}
+
+/* Article */
+.diy-article {
+  width: 35%;
+  margin: 0 auto 1vw auto;
+}
+
+.diy-article h2 {
+  margin: .75vw 0;
+}
+
+.diy-article-video > div {
+  position: relative;
+}
+
+.diy-article-video .bg,
+.diy-article-video .bg img {
+  width: 100%;
+  border-radius: 1vw;
+}
+
+.diy-article-video .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5.2vw;
+  z-index: 2;
+}
+
+.diy-article-video .play img {
+  width: 100%;
+}
+
+.diy-article-video .shadow-img {
+  width: 100%;
+  margin-top: .5vw;
+}
+
+@media (max-width: 1023.98px) {
+  .diy-article {
+    width: 92%;
+    margin-bottom: 0;
+  }
+
+  .diy-article h2 {
+    margin: 2vw 0;
+  }  
+
+  .diy-article-video {
+    margin-bottom: 1vw;
+  }
+
+  .diy-article-video .bg,
+  .diy-article-video .bg img {
+    border-radius: 2.6vw;
+  }
+
+  .diy-article-video .play {
+    width: 13.3vw;
+  }
+
+  .diy-article-video .shadow-img {
+    margin-top: 1.33vw;
+  }
+}
+
+/* Footer */
+.diy-footer {
+  padding: 1.8vw 0 3.6vw 0;
+  background-color: white;
+  margin-top: auto;
+}
+
+.diy-footer h2 {
+  text-align: center;
+  margin-bottom: 1vw;
+}
+
+.diy-footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diy-footer ul li:not(:last-child) {
+  margin-left: .75vw;
+}
+
+.diy-footer ul img {
+  width: 18.2vw;
+}
+
+@media (max-width: 1023.98px) {
+  .diy-footer {
+    padding: 8vw 0 12.6vw 0;
+  }
+
+  .diy-footer h2 {
+    margin-bottom: 5.3vw;
+  }
+
+  .diy-footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 84%;
+    margin: 0 auto;
+  }
+
+  .diy-footer ul li:not(:last-child) {
+    margin-left: 0;
+    margin-bottom: 2.5vw;
+  }
+
+  .diy-footer ul img {
+    width: 100%;
   }
 }
 
