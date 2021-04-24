@@ -14,11 +14,9 @@ if (document.querySelector('.component-video-slider')) {
   });
 }
 
-/* #Component Years - Flipdown JS
+/* #Component Years
 ================================================== */
-if (document.querySelector('.flipdown')) {
-  new FlipDown(1593561600, "flipdown").start();
-}
+
 
 /* #Home Virtual Tour
 ================================================== */

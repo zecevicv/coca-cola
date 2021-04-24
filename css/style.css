@@ -2061,10 +2061,6 @@ h6 {
   margin: 1vw 0;
 }
 
-.component-years .flipdown {
-  margin: 0 auto 5vw auto;
-}
-
 .component-years .img,
 .component-years .img img {
   width: 100%;
@@ -2073,10 +2069,6 @@ h6 {
 @media (max-width: 1023.98px) {
   .component-years h3 {
     margin: 3.33vw 0 6vw 0;
-  }
-  
-  .component-years .flipdown {
-    margin: 0 auto 22.6vw auto;
   }
 
   .component-years .text {
