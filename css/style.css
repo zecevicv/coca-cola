@@ -355,8 +355,11 @@ h6 {
   box-shadow: 0 3px 10px rgba(0,0,0,.3);
 }
 
+
+
 @media (max-width: 1023.98px) {
-  .btn {
+  .btn,
+  .btn.btn-small {
     font-size: 4.66vw!important; /* 35px */
     padding: 2vw 2vw;
   }
@@ -495,7 +498,7 @@ h6 {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  width: 60%;
+  width: 55%;
 }
 
 .home-virtual-tour .machines img {
