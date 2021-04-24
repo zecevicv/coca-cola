@@ -1802,6 +1802,32 @@ h6 {
   }
 }
 
+/* #Trivia
+================================================== */
+.trivia {
+  min-height: calc(100vh - 3.17vw);
+  background-color: #ce070a;
+  color: white;
+}
+
+.trivia .text {
+  text-align: center;
+}
+
+.trivia h1 {
+  margin-bottom: .5vw;
+}
+
+@media (max-width: 1023.98px) {
+  .trivia {
+    min-height: calc(100vh - 13vw);
+  }
+
+  .trivia h1 {
+    margin-bottom: 2vw;
+  }
+}
+
 /* #Component - Years
 ================================================== */
 .component-years {
