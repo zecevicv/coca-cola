@@ -1843,6 +1843,11 @@ h6 {
   color: white;
 }
 
+.trivia.trivia-final {
+  min-height: 0!important;
+  padding-bottom: 3.125vw;
+}
+
 .trivia .img {
   position: relative;
 }
@@ -1850,10 +1855,16 @@ h6 {
 .trivia .img .trivia-num {
   position: absolute;
   top: 54.5%;
-  left: 52.5%;
+  left: 52.75%;
   transform: translate(-50%, -50%);
-  font-size: 4.6vw;
+  font-size: 3.5vw;
   font-weight: 700;
+  text-align: center;
+  min-width: 7vw;
+}
+
+.trivia.trivia-final .img .trivia-num {
+  left: 53.5%; 
 }
 
 .trivia .text {
@@ -1865,6 +1876,10 @@ h6 {
 
 .trivia h1 {
   margin-bottom: 1vw;
+}
+
+.trivia.trivia-final h1 {
+  margin-bottom: .5vw;
 }
 
 .trivia-btns {
@@ -1886,15 +1901,48 @@ h6 {
   margin-bottom: 0.7vw;
 }
 
+.trivia-social {
+  text-align: center;
+  margin-top: 1.7vw;
+  margin-bottom: 2.5vw;
+}
+
+.trivia-social ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: .75vw;
+}
+
+.trivia-social ul li:not(:last-child) {
+  margin-left: 1vw;
+}
+
+.trivia-social img {
+  width: 1.77vw;
+  height: 1.77vw;
+  object-fit: contain;
+  object-position: center;
+}
+
 @media (max-width: 1023.98px) {
   .trivia {
     min-height: calc(100vh - 13vw);
   }
 
+  .trivia.trivia-final {
+    padding-bottom: 10vw;
+  }
+
   .trivia .img .trivia-num {
-    top: 56%;
-    left: 58%;
-    font-size: 15.3vw;
+    top: 55%;
+    left: 60.5%;
+    font-size: 12vw;
+    min-width: 30vw;
+  }
+
+  .trivia.trivia-final .img .trivia-num {
+    left: 62%;
   }
 
   .trivia h1 {
@@ -1919,6 +1967,78 @@ h6 {
   .trivia-btns a:not(:last-child),
   .trivia-btns button:not(:last-child) {
     margin-bottom: 3vw;
+  }
+
+  .trivia-social {
+    margin-top: 10vw;
+    margin-bottom: 8vw;
+  }
+
+  .trivia-social ul {
+    margin-top: 4vw;
+  }
+  
+  .trivia-social ul li:not(:last-child) {
+    margin-left: 6vw;
+  }
+
+  .trivia-social img {
+    width: 9.3vw;
+    height: 9.3vw;
+  }
+}
+
+/* #Trivia Footer
+================================================== */
+.trivia-footer {
+  padding: 1.8vw 0 3.6vw 0;
+}
+
+.trivia-footer h2 {
+  text-align: center;
+  margin-bottom: 1vw;
+}
+
+.trivia-footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trivia-footer ul li:not(:last-child) {
+  margin-left: .75vw;
+}
+
+.trivia-footer ul img {
+  width: 18.2vw;
+}
+
+@media (max-width: 1023.98px) {
+  .trivia-footer {
+    padding: 8vw 0 12.6vw 0;
+  }
+
+  .trivia-footer h2 {
+    margin-bottom: 5.3vw;
+  }
+
+  .trivia-footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 84%;
+    margin: 0 auto;
+  }
+
+  .trivia-footer ul li:not(:last-child) {
+    margin-left: 0;
+    margin-bottom: 2.5vw;
+  }
+
+  .trivia-footer ul img {
+    width: 100%;
   }
 }
 
