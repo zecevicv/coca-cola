@@ -2091,7 +2091,7 @@ h6 {
   box-shadow: 0 0 10px rgba(0,0,0,.3);
   overflow: hidden;
   background-color: white;
-  margin-bottom: auto;
+  margin-bottom: 3.1vw;
 }
 
 .questionaire-choose .top-bar {
@@ -2161,7 +2161,7 @@ h6 {
   align-items: center;
   justify-content: center;
   padding: 2vw 0 4vw 0;
-  margin-top: 3.1vw;
+  margin-top: auto;
 }
 
 .questionaire-footer a:first-child {
@@ -2194,6 +2194,7 @@ h6 {
   .questionaire-choose {
     width: 77%;
     border-radius: 1.3vw;
+    margin-bottom: 6vw;
   }
 
   .questionaire-choose .top-bar {
@@ -2217,7 +2218,6 @@ h6 {
   .questionaire-footer {
     flex-direction: column;
     padding: 6.66vw 0;
-    margin-top: 6vw;
   }
   
   .questionaire-footer a:first-child {
