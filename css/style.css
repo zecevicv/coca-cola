@@ -2052,6 +2052,7 @@ h6 {
   background-repeat: no-repeat;
   background-position: top center;
   color: white;
+  padding-bottom: 2vw;
 }
 
 .questionaire-header {
@@ -2072,6 +2073,65 @@ h6 {
   margin-bottom: 2vw;
 }
 
+.questionaire-choose {
+  line-height: 1;
+  margin: 0 auto;
+  width: 25%;
+  border-radius: .5vw;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+  overflow: hidden;
+}
+
+.questionaire-choose .top-bar {
+  height: 0.67vw;
+  margin-bottom: 0.15vw;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+}
+
+.questionaire-choose .top-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  background-color: #f00000;
+}
+
+.questionaire-choose ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1.5vw;
+  background-color: white;
+}
+
+.questionaire-choose ul li {
+  flex: 0 0 50%;
+  padding: .65vw;
+  position: relative;
+}
+
+.questionaire-choose ul li p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align-last: center;
+  line-height: 1;
+}
+
+.questionaire-choose ul li img {
+  height: 11.45vw;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: .5vw;
+}
+
 @media (max-width: 1023.98px) {
   .questionaire {
     min-height: calc(100vh - 13vw);
@@ -2089,6 +2149,29 @@ h6 {
   
   .questionaire-header h1 {
     margin-bottom: 6.66vw;
+  }
+
+  .questionaire-choose {
+    width: 77%;
+    border-radius: 1.3vw;
+  }
+
+  .questionaire-choose .top-bar {
+    height: 1.7vw;
+    margin-bottom: 0.4vw;
+  }
+
+  .questionaire-choose ul {
+    padding: 4.66vw;
+  }
+  
+  .questionaire-choose ul li {
+    padding: 2vw;
+  }
+
+  .questionaire-choose ul li img {
+    height: 33.33vw;
+    border-radius: 1.3vw;
   }
 }
 
