@@ -355,8 +355,6 @@ h6 {
   box-shadow: 0 3px 10px rgba(0,0,0,.3);
 }
 
-
-
 @media (max-width: 1023.98px) {
   .btn,
   .btn.btn-small {
@@ -2042,6 +2040,55 @@ h6 {
 
   .trivia-footer ul img {
     width: 100%;
+  }
+}
+
+/* #Questionaire
+================================================== */
+.questionaire {
+  min-height: calc(100vh - 3.17vw);
+  background-image: url('../img/questionaire/questionaire-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: white;
+}
+
+.questionaire-header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 1.9vw;
+}
+
+.questionaire-header img {
+  width: 10.9vw;
+  margin-bottom: 1.5vw;
+}
+
+.questionaire-header h1 {
+  margin-bottom: 2vw;
+}
+
+@media (max-width: 1023.98px) {
+  .questionaire {
+    min-height: calc(100vh - 13vw);
+    background-image: url('../img/questionaire/questionaire-bg-mobile.jpg');
+  }
+
+  .questionaire-header {
+    padding-top: 6.66vw;
+  }
+  
+  .questionaire-header img {
+    width: 40vw;
+    margin-bottom: 3.33vw;
+  }
+  
+  .questionaire-header h1 {
+    margin-bottom: 6.66vw;
   }
 }
 
