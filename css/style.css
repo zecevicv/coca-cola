@@ -2052,7 +2052,17 @@ h6 {
   background-repeat: no-repeat;
   background-position: top center;
   color: white;
-  padding-bottom: 2vw;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.questionaire .container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  flex-grow: 1;
 }
 
 .questionaire-header {
@@ -2080,11 +2090,13 @@ h6 {
   border-radius: .5vw;
   box-shadow: 0 0 10px rgba(0,0,0,.3);
   overflow: hidden;
+  background-color: white;
+  margin-bottom: auto;
 }
 
 .questionaire-choose .top-bar {
   height: 0.67vw;
-  margin-bottom: 0.15vw;
+  border-bottom: 0.15vw solid #d73a41;
   position: relative;
   overflow: hidden;
   background-color: white;
@@ -2096,7 +2108,7 @@ h6 {
   top: 0;
   right: 0;
   width: 20%;
-  height: 100%;
+  height: 110%;
   background-color: #f00000;
 }
 
@@ -2112,16 +2124,27 @@ h6 {
 .questionaire-choose ul li {
   flex: 0 0 50%;
   padding: .65vw;
-  position: relative;
 }
 
-.questionaire-choose ul li p {
+.questionaire-choose a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.questionaire-choose > a {
+  padding: 1.5vw;
+}
+
+.questionaire-choose p {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align-last: center;
+  text-align: center;
   line-height: 1;
+  width: 80%;
 }
 
 .questionaire-choose ul li img {
@@ -2130,6 +2153,23 @@ h6 {
   object-fit: cover;
   object-position: center;
   border-radius: .5vw;
+}
+
+.questionaire-footer {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw 0 4vw 0;
+  margin-top: 3.1vw;
+}
+
+.questionaire-footer a:first-child {
+  margin-left: 1vw;
+}
+
+.questionaire-footer img {
+  width: 24vw;
 }
 
 @media (max-width: 1023.98px) {
@@ -2158,7 +2198,7 @@ h6 {
 
   .questionaire-choose .top-bar {
     height: 1.7vw;
-    margin-bottom: 0.4vw;
+    border-bottom: 0.4vw solid #d73a41;
   }
 
   .questionaire-choose ul {
@@ -2173,6 +2213,27 @@ h6 {
     height: 33.33vw;
     border-radius: 1.3vw;
   }
+
+  .questionaire-footer {
+    flex-direction: column;
+    padding: 6.66vw 0;
+    margin-top: 6vw;
+  }
+  
+  .questionaire-footer a:first-child {
+    margin-left: 0;
+    margin-bottom: 4vw;
+  }
+
+  .questionaire-footer img {
+    width: 84%;
+    margin: 0 auto;
+  }
+
+  .questionaire-choose > a {
+    padding: 6vw;
+  }
+  
 }
 
 /* #Component - Years
