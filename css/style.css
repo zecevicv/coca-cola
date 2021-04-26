@@ -2403,6 +2403,7 @@ h6 {
   align-items: center;
   justify-content: center;
   padding-bottom: 2vw;
+  overflow: hidden;
 }
 
 .post-card-step-1 h2,
@@ -2654,6 +2655,158 @@ h6 {
   .post-card-step-2 .swiper-button-next::after, 
   .post-card-step-2 .swiper-button-prev::after {
     font-size: 8vw;
+  }
+}
+
+/* #Post Card Step 4
+================================================== */
+.post-card-result {
+  background-color: white;
+  color: #eb2d2e;
+  border: 0.67vw solid #eb2d2e;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+  border-radius: 2.6vw;
+  line-height: 1;
+  padding: 8.5vw 0 1.5vw 0;
+  position: relative;
+  overflow: hidden;
+  width: 29vw;
+}
+
+.post-card-result .name {
+  background-color: #eb2d2e;
+  color: white;
+  position: absolute;
+  top: 1vw;
+  right: -9.5vw;
+  width: 100%;
+  transform: rotate(30deg);
+  padding: .25vw 0;
+}
+
+.post-card-result .message {
+  margin-top: 1vw;
+}
+
+.post-card-social {
+  text-align: center;
+  margin-top: 2vw;
+  margin-bottom: 3vw;
+}
+
+.post-card-social ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: .75vw;
+  margin-bottom: 3.65vw;
+}
+
+.post-card-social ul li:not(:last-child) {
+  margin-left: 1.8vw;
+}
+
+.post-card-social img {
+  width: 3.125vw;
+  height: 3.125vw;
+  object-fit: contain;
+  object-position: center;
+}
+
+.post-card-questionaire {
+  width: 100%;
+  position: relative;
+}
+
+.post-card-questionaire .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.post-card-questionaire .text img {
+  width: 11.2vw;
+  margin-bottom: 1vw;
+}
+
+.post-card-questionaire .text p {
+  margin: 1vw 0 1.3vw 0;
+}
+
+.post-card-questionaire .img {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.post-card-questionaire .img img {
+  width: 100%;
+}
+
+@media (max-width: 1023.98px) {
+  .post-card-result {
+    border: 1.75vw solid #eb2d2e;
+    border-radius: 2.6vw;
+    padding: 24vw 0 4vw 0;
+    width: 84%;
+  }
+
+  .post-card-result .name {
+    top: 3vw;
+    right: -28vw;
+    padding: .75vw 0;
+  }
+
+  .post-card-result .message {
+    margin-top: 2.5vw;
+  }
+
+  .post-card-social {
+    margin-top: 4.6vw;
+    margin-bottom: 14.6vw;
+  }
+  
+  .post-card-social ul {
+    margin-top: 4.66vw;
+    margin-bottom: 13vw;
+  }
+  
+  .post-card-social ul li:not(:last-child) {
+    margin-left: 6.66vw;
+  }
+  
+  .post-card-social img {
+    width: 12vw;
+    height: 12vw;
+  }
+  
+  .post-card-questionaire .text {
+    top: 0;
+    width: 100%;
+  }
+  
+  .post-card-questionaire .text img {
+    width: 48vw;
+    margin-bottom: 4vw;
+  }
+
+  .post-card-questionaire .text h2 {
+    margin: 0;
+  }
+  
+  .post-card-questionaire .text p {
+    margin: 4vw 0 6vw 0;
+  }
+  
+  .post-card-questionaire .img {
+    width: 200%;
+    margin: 0 auto;
+    transform: translateX(20%);
   }
 }
 
