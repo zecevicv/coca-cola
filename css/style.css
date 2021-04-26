@@ -2480,6 +2480,78 @@ h6 {
   }
 }
 
+/* #Post Card Step 3
+================================================== */
+.post-card-step-3 {
+  width: 25%;
+  margin: 0 auto;
+  align-items: stretch;
+  text-align: right!important;
+}
+
+.post-card-step-3 h2 {
+  margin-bottom: 0;
+}
+
+.post-card-step-3 .text-area {
+  width: 100%;
+  margin-bottom: 2.35vw;
+}
+
+.post-card-step-3 .text-area p {
+  border-bottom: 0.15vw solid white;
+  height: 2.6vw;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.post-card-step-3 .btn-area {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -.15vw;
+}
+
+.post-card-step-3 .btn-area a {
+  font-size: 1.2vw!important; /* 23px */
+  font-weight: 400;
+  flex-grow: 1;
+  margin: .15vw;
+}
+
+.post-card-step-3 .text-center {
+  margin-top: 2.8vw;
+}
+
+@media (max-width: 1023.98px) {
+  .post-card-step-3 {
+    width: 75%;
+  }
+
+  .post-card-step-3 .text-area {
+    margin-bottom: 7.3vw;
+  }
+  
+  .post-card-step-3 .text-area p {
+    border-bottom: 0.4vw solid white;
+    height: 8vw;
+  }
+
+  .post-card-step-3 .btn-area {
+    margin: -.5vw;
+  }
+
+  .post-card-step-3 .btn-area a {
+    font-size: 3.7vw!important;
+    margin: .5vw;
+  }
+
+  .post-card-step-3 .text-center {
+    margin-top: 8.6vw;
+  }
+}
+
 /* #Post Card Swiper
 ================================================== */
 .post-card-step-2 .swiper-container {
