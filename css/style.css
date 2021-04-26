@@ -2254,6 +2254,11 @@ h6 {
   line-height: 1;
 }
 
+.post-card-banner .img img,
+.post-card-banner .img picture {
+  width: 100%;
+}
+
 .post-card-banner .text {
   position: absolute;
   left: 50%;
@@ -2387,20 +2392,30 @@ h6 {
 
 /* #Post Card Step
 ================================================== */
-.post-card-step-1 {
+.post-card-step-1,
+.post-card-step-2,
+.post-card-step-3,
+.post-card-step-4 {
   color: white;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 2vw;
 }
 
-.post-card-step-1 h2 {
+.post-card-step-1 h2,
+.post-card-step-2 h2,
+.post-card-step-3 h2,
+.post-card-step-4 h2 {
   margin-bottom: 1.3vw;
 }
 
-.post-card-step-1 h2 a {
+.post-card-step-1 h2 a,
+.post-card-step-2 h2 a,
+.post-card-step-3 h2 a,
+.post-card-step-4 h2 a {
   text-decoration: underline;
 }
 
@@ -2436,7 +2451,17 @@ h6 {
 }
 
 @media (max-width: 1023.98px) {
-  .post-card-step-1 h2 {
+  .post-card-step-1,
+  .post-card-step-2,
+  .post-card-step-3,
+  .post-card-step-4 {
+    padding-bottom: 5.3vw;
+  }
+
+  .post-card-step-1 h2,
+  .post-card-step-2 h2,
+  .post-card-step-3 h2,
+  .post-card-step-4 h2 {
     margin-bottom: 4.6vw;
   }
 
@@ -2452,6 +2477,111 @@ h6 {
   
   .post-card-step-1 .form-group:last-child {
     margin-top: 12vw;
+  }
+}
+
+/* #Post Card Swiper
+================================================== */
+.post-card-step-2 .swiper-container {
+  width: 25.2vw;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 0;
+  max-height: 100%;
+  margin-bottom: 2.35vw;
+}
+
+.post-card-step-2 .swiper-slide {
+  padding: 10px 3.4vw;
+}
+
+.post-card-step-2 .swiper-slide > div {
+  background-color: white;
+  color: #eb2d2e;
+  border: 0.67vw solid #eb2d2e;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+  border-radius: 2.6vw;
+  line-height: 1;
+  padding: 10.4vw 0 1.5vw 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.post-card-step-2 .name {
+  background-color: #eb2d2e;
+  color: white;
+  position: absolute;
+  top: 1vw;
+  right: -4.5vw;
+  width: 100%;
+  transform: rotate(30deg);
+  padding: .25vw 0;
+}
+
+.post-card-step-2 .swiper-container-rtl .swiper-button-next {
+  left: 0;
+}
+
+.post-card-step-2 .swiper-container-rtl .swiper-button-prev {
+  right: 0;
+}
+
+.post-card-step-2 .swiper-container-rtl .swiper-button-next::after {
+  content: ">";
+}
+
+.post-card-step-2 .swiper-container-rtl .swiper-button-prev::after {
+  content: "<";
+}
+
+.post-card-step-2 .swiper-button-next::after, 
+.post-card-step-2 .swiper-button-prev::after {
+  font-family: 'spacer', sans-serif;
+  font-size: 2vw;
+}
+
+.post-card-step-2 .swiper-button-next, 
+.post-card-step-2 .swiper-button-prev {
+  width: 2.2vw;
+  height: 2.2vw;
+  margin-top: 0;
+  color: white;
+  border-radius: 50%;
+  border: 2px solid white;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 1023.98px) {
+  .post-card-step-2 .swiper-container {
+    width: 78vw;
+    margin-bottom: 6vw;
+  }
+
+  .post-card-step-2 .swiper-slide {
+    padding: 10px 10.75vw;
+  }
+
+  .post-card-step-2 .swiper-slide > div {
+    border: 1.75vw solid #eb2d2e;
+    border-radius: 2.6vw;
+    padding: 33.3vw 0 5.33vw 0;
+  }
+
+  .post-card-step-2 .name {
+    top: 3vw;
+    right: -16vw;
+    padding: .75vw 0;
+  }
+
+  .post-card-step-2 .swiper-button-next, 
+  .post-card-step-2 .swiper-button-prev {
+    width: 6.66vw;
+    height: 6.66vw;
+  }
+
+  .post-card-step-2 .swiper-button-next::after, 
+  .post-card-step-2 .swiper-button-prev::after {
+    font-size: 8vw;
   }
 }
 

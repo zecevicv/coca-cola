@@ -99,3 +99,17 @@ if (document.querySelector('.diy-navigation .swiper-container')) {
     },
   });
 }
+
+/* #Post Card Slider
+======================================================= */
+if (document.querySelector('.post-card .swiper-container')) {
+  new Swiper('.post-card .swiper-container', {
+    slidesPerView: 1,
+    loop: true,
+    centeredSlides: true,
+    navigation: {
+      nextEl: '.post-card .swiper-button-next',
+      prevEl: '.post-card .swiper-button-prev',
+    },
+  });
+}
