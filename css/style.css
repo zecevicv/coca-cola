@@ -2254,17 +2254,26 @@ h6 {
   line-height: 1;
 }
 
-.post-card-banner.lg .text {
+.post-card-banner .text {
   position: absolute;
-  top: 12%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   width: 30%;
+  top: 50%;
+}
+
+.post-card-banner.lg .text {
+  top: 12%;
+  transform: translateX(-50%);
 }
 
 @media (max-width: 1023.98px) {
   .post-card {
     min-height: calc(100vh - 13vw);
+  }
+
+  .post-card-banner .text {
+    width: 90%;
   }
 
   .post-card-banner.lg .text {
@@ -2317,6 +2326,132 @@ h6 {
 
   .post-card-main a:last-child {
     margin: 0;
+  }
+}
+
+/* #Post Card Steps
+================================================== */
+.post-card-steps ul {
+  display: flex;
+  justify-content: center;
+  padding: 2vw 0;
+}
+
+.post-card-steps ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  opacity: .4;
+}
+
+.post-card-steps ul li:not(:last-child) {
+  margin-left: 1.3vw;
+}
+
+.post-card-steps ul li.active {
+  font-weight: 700;
+  opacity: 1;
+}
+
+.post-card-steps ul li .num {
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  margin-left: .5vw;
+  width: 1.3vw;
+  height: 1.3vw;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70%;
+}
+
+@media (max-width: 1023.98px) {
+  .post-card-steps ul {
+    padding: 8vw 0 6vw 0;
+  }
+
+  .post-card-steps ul li:not(:last-child) {
+    margin-left: 3vw;
+  }
+
+  .post-card-steps ul li .num {
+    margin-left: 1.7vw;
+    width: 4.4vw;
+    height: 4.4vw;
+  }
+}
+
+/* #Post Card Step
+================================================== */
+.post-card-step-1 {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-card-step-1 h2 {
+  margin-bottom: 1.3vw;
+}
+
+.post-card-step-1 h2 a {
+  text-decoration: underline;
+}
+
+.post-card-step-1 form {
+  width: 100%;
+}
+
+.post-card-step-1 .form-group {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.3vw;
+}
+
+.post-card-step-1 .form-group:last-child {
+  margin-top: 3.75vw;
+}
+
+.post-card-step-1 input {
+  width: 24.2vw;
+  text-align: center;
+  border: none;
+  color: #eb2d2e;
+  height: 3.75vw;
+  border-radius: 500px;
+  font-size: 1.3vw;
+}
+
+.post-card-step-1 input::placeholder {
+  color: #eb2d2e;
+}
+
+@media (max-width: 1023.98px) {
+  .post-card-step-1 h2 {
+    margin-bottom: 4.6vw;
+  }
+
+  .post-card-step-1 input {
+    width: 75%;
+    height: 11.3vw;
+    font-size: 4vw;
+  }
+
+  .post-card-step-1 .form-group {
+    margin-bottom: 4.6vw;
+  }
+  
+  .post-card-step-1 .form-group:last-child {
+    margin-top: 12vw;
   }
 }
 
