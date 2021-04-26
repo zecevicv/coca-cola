@@ -118,6 +118,10 @@ button {
   display: none !important;
 }
 
+.d-block {
+  display: block!important;
+}
+
 @media (max-width: 1023.98px) {
   .d-desktop {
     display: none !important;
@@ -2234,6 +2238,86 @@ h6 {
     padding: 6vw;
   }
   
+}
+
+/* #Post Card
+================================================== */
+.post-card {
+  min-height: calc(100vh - 3.17vw);
+  background-color: #ca1b21;
+}
+
+.post-card-banner {
+  position: relative;
+  color: white;
+  text-align: center;
+  line-height: 1;
+}
+
+.post-card-banner.lg .text {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%;
+}
+
+@media (max-width: 1023.98px) {
+  .post-card {
+    min-height: calc(100vh - 13vw);
+  }
+
+  .post-card-banner.lg .text {
+    top: 12%;
+    width: 90%;
+  }
+}
+
+/* #Post Card Main
+================================================== */
+.post-card-main {
+  width: 32%;
+  margin: 0 auto;
+  padding-top: 1.45vw;
+}
+
+.post-card-main > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: -.25vw;
+}
+
+.post-card-main a {
+  flex: 0 0 48%;
+  border-radius: 1.5vw;
+  justify-content: space-between;
+  padding: 1.2vw 0.8vw;
+  margin: .25vw;
+}
+
+@media (max-width: 1023.98px) {
+  .post-card-main {
+    width: 84%;
+    padding: 4.66vw 0;
+  }
+
+  .post-card-main > div {
+    margin: 0;
+  }
+
+  .post-card-main a {
+    flex: 0 0 100%;
+    border-radius: 4vw;
+    margin: 0;
+    margin-bottom: 2.66vw;
+    padding: 6vw 4vw;
+  }
+
+  .post-card-main a:last-child {
+    margin: 0;
+  }
 }
 
 /* #Component - Years
