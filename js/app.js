@@ -5,6 +5,16 @@ if (Vue) {
     el: '.header',
     data: {
       showMenu: false
+    },
+    watch: {
+      showMenu: function (val) {
+        const body = document.querySelector('body');
+        if (val == true) {
+          body.classList.add('no-scroll');
+        } else {
+          body.classList.remove('no-scroll');
+        }
+      },
     }
   });
 }
