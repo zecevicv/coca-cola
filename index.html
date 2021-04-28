@@ -21,18 +21,46 @@
 <body>
 
   <!-- Header -->
-  <header class="header">
+  <header class="header" v-bind:class="{ 'show-menu': showMenu }">
     <div class="container">
-      <div class="header-col">
-        <a href="#" class="header-hamburger">
+      <!-- Hamburger (Mobile Only) -->
+      <div class="header-hamburger d-mobile" @click="showMenu = !showMenu">
+        <a href="#">
           <img src="img/global/icon-hamburger.png" alt="hamburger-icon">
         </a>
+      </div>
+      <!-- Links -->
+      <div class="header-links f-d-1 f-m-4">
+        <ul>
+          <li>
+            <a href="#" class="active">דף הבית</a>
+          </li>
+          <li>
+            <a href="#">הסדרי נגישות</a>
+          </li>
+          <li>
+            <a href="#">אודות</a>
+          </li>
+          <li>
+            <a href="#">המותגים</a>
+          </li>
+          <li>
+            <a href="#">חדשות מהעולם</a>
+          </li>
+          <li>
+            <a href="#">שירות צרכנים</a>
+          </li>
+          <li>
+            <a href="#">חוק סימון תזונתי </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Logo -->
+      <div class="header-logo">
         <a href="#" class="header-wheelchair">
           <img src="img/global/icon-wheelchair.png" alt="wheelchair-icon">
         </a>
-      </div>
-      <div class="header-col">
-        <a href="#" class="header-logo">
+        <a href="#">
           <img src="img/global/logo.png" alt="coca-cola-logo">
         </a>
       </div>

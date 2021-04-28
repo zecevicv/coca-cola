@@ -1,5 +1,14 @@
 /* #Component Video Slider Slider
 ================================================== */
+new Vue({
+  el: '.header',
+  data: {
+    showMenu: false
+  }
+});
+
+/* #Component Video Slider Slider
+================================================== */
 if (document.querySelector('.component-video-slider')) {
   var swiper = new Swiper('.component-video-slider .swiper-container', {
     slidesPerView: 3.65,
@@ -13,10 +22,6 @@ if (document.querySelector('.component-video-slider')) {
     }
   });
 }
-
-/* #Component Years
-================================================== */
-
 
 /* #Home Virtual Tour
 ================================================== */

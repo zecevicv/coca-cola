@@ -378,7 +378,6 @@ h6 {
 /* #Header
 ================================================== */
 .header {
-  padding: .25vw 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -391,16 +390,21 @@ h6 {
   max-width: 98%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-.header-col {
-  display: flex;
-  align-items: center;
+  align-items: stretch;
 }
 
 .header-hamburger {
   margin-left: 1.56vw;
+}
+
+.header-logo {
+  padding: .25vw 0;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo a {
+  display: inline-block;
 }
 
 .header-logo img {
@@ -411,17 +415,45 @@ h6 {
   width: 1.45vw;
 }
 
+.header-links ul {
+  display: flex;
+  height: 100%;
+}
+
+.header-links ul li {
+  height: 100%;
+}
+
+.header-links ul li:not(:last-child) {
+  margin-left: 1.45vw;
+}
+
+.header-links ul a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.2vw solid transparent;
+  transition: border .3s ease;
+}
+
+.header-links ul a:hover,
+.header-links ul a.active {
+  border-color: #eb2a2e;
+}
+
+.header-wheelchair {
+  margin-left: 1vw;
+}
+
 .header-wheelchair img {
   width: 1.09vw;
 }
 
 @media (max-width: 1023.98px) {
-  .header {
-    padding: 1.7vw 0;
-  }
-
   .header .container {
     max-width: 92%;
+    padding: 1.7vw 0;
+    align-items: center;
   }
 
   .header-logo img {
@@ -437,7 +469,54 @@ h6 {
   }
 
   .header-wheelchair {
-    display: none;
+    margin-left: 4vw;
+  }
+
+  .header-wheelchair img {
+    width: 5vw;
+  }
+
+  .header-links {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: calc(100% - 13vw);
+    width: 70%;
+    padding-top: 6vw;
+    padding-right: 4vw;
+    background-color: white;
+    transform: translateX(100%);
+    transition: all .3s ease;
+  }
+
+  .header.show-menu .header-links {
+    transform: translateX(0);
+  }
+
+  .header-links ul {
+    display: block;
+    height: auto;
+  }
+
+  .header-links ul li {
+    height: auto;
+    width: auto;
+  }
+
+  .header-links ul li:not(:last-child) {
+    margin-left: 0;
+    margin-bottom: 3vw;
+  }
+  
+  .header-links ul a {
+    height: auto;
+    display: inline-flex;
+    border-bottom: none!important;
+    transition: all .3s ease;
+  }
+
+  .header-links ul a.active {
+    color: #eb2a2e;
   }
 }
 
