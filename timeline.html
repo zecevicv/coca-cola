@@ -10,6 +10,7 @@
 
   <!-- Style (Vendor) -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/flip.min.css">
 
   <!-- Style -->
   <link rel="stylesheet" href="css/style.css">
@@ -193,17 +194,44 @@
     <div class="container">
       <!-- Text -->
       <div class="text">
-        <h2 class="f-d-4 f-m-5 black">
+        <h2 class="f-d-3 f-m-5 black">
           בואו למצוא את עצמכם
           <br>על ציר הזמן של קוקה-קולה!
         </h2>
-        <h3 class="f-d-3 f-m-3">שנת הלידה שלי היא:</h3>
-        <a href="#" class="btn btn-primary btn-lg shadow">צפיה בשנה שלי ></a>
+        <h3 class="f-d-2 f-m-3">שנת הלידה שלי היא:</h3>
+        <!-- Flipdown -->
+        <div class="flipdown" dir="ltr">
+          <!-- Tick -->
+          <div class="tick" data-value="1" data-did-init="setupFlip" data-credits="false">
+            <div data-repeat="true">
+              <span data-view="flip"></span>
+            </div>
+          </div>
+          <!-- Tick -->
+          <div class="tick" data-value="9" data-did-init="setupFlip" data-credits="false">
+            <div data-repeat="true">
+              <span data-view="flip"></span>
+            </div>
+          </div>
+          <!-- Tick -->
+          <div class="tick" data-value="9" data-did-init="setupFlip" data-credits="false">
+            <div data-repeat="true">
+              <span data-view="flip"></span>
+            </div>
+          </div>
+          <!-- Tick -->
+          <div class="tick" data-value="4" data-did-init="setupFlip" data-credits="false">
+            <div data-repeat="true">
+              <span data-view="flip"></span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn btn-primary btn-small shadow">צפיה בשנה שלי ></a>
       </div>
       <!-- Img -->
       <div class="img">
         <picture>
-          <source media="(min-width:1024px)" srcset="img/timeline/years-bg.jpg">
+          <source media="(min-width:1024px)" srcset="img/global/years-bg.jpg">
           <img src="img/global/years-bg-mobile.jpg" alt="years-img">
         </picture>
       </div>
@@ -235,7 +263,9 @@
   </div>
 
   <!-- Script (Vendor) -->
+  <script src="js/vue.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/flip.min.js"></script>
 
   <!-- Script -->
   <script src="js/app.js"></script>

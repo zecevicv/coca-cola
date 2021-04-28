@@ -1,13 +1,15 @@
-/* #Component Video Slider Slider
+/* #Header
 ================================================== */
-new Vue({
-  el: '.header',
-  data: {
-    showMenu: false
-  }
-});
+if (Vue) {
+  new Vue({
+    el: '.header',
+    data: {
+      showMenu: false
+    }
+  });
+}
 
-/* #Component Video Slider Slider
+/* #Component Video Slider
 ================================================== */
 if (document.querySelector('.component-video-slider')) {
   var swiper = new Swiper('.component-video-slider .swiper-container', {
@@ -116,5 +118,30 @@ if (document.querySelector('.post-card .swiper-container')) {
       nextEl: '.post-card .swiper-button-next',
       prevEl: '.post-card .swiper-button-prev',
     },
+  });
+}
+
+/* #Flipdown
+======================================================= */
+function setupFlip(tick) {
+  const flipCard = tick._element.querySelector('.tick-flip');
+  flipCard.addEventListener('click', (e) => {
+    if (
+      e.target.closest('.tick-flip-panel-back') ||
+      e.target.closest('.tick-flip-panel-back-highlight') ||
+      e.target.closest('.tick-flip-panel-text-wrapper')
+    ) {
+      if (tick.value == 1) {
+        tick.value = 9;
+      } else {
+        tick.value--;
+      }
+    } else {
+      if (tick.value == 9) {
+        tick.value = 1;
+      } else {
+        tick.value++;
+      }
+    }
   });
 }
