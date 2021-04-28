@@ -21,7 +21,7 @@
   <header class="header" v-bind:class="{ 'show-menu': showMenu }">
     <div class="container">
       <!-- Hamburger (Mobile Only) -->
-      <div class="header-hamburger d-mobile" @click="showMenu = !showMenu">
+      <div class="header-hamburger d-mobile" @click.prevent="showMenu = !showMenu">
         <a href="#">
           <img src="img/global/icon-hamburger.png" alt="hamburger-icon">
         </a>
