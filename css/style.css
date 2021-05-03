@@ -1369,9 +1369,11 @@ h6 {
 ================================================== */
 .timeline-footer {
   padding: 1.8vw 0 3.6vw 0;
+  background-color: white;
+  margin-top: auto;
 }
 
-.timeline-footer h2 {
+.timeline-footer .container > h2 {
   text-align: center;
   margin-bottom: 1vw;
 }
@@ -1382,8 +1384,36 @@ h6 {
   justify-content: center;
 }
 
+.timeline-footer ul li {
+  position: relative;
+}
+
 .timeline-footer ul li:not(:last-child) {
   margin-left: .75vw;
+}
+
+.timeline-footer ul .text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: white;
+  padding-right: 0.83vw;
+  padding-bottom: 0.41vw;
+}
+
+.timeline-footer ul p {
+  font-size: 0.62vw!important;
+}
+
+.timeline-footer ul h2 {
+  font-size: 1.0vw!important;
+}
+
+.timeline-footer ul .btn {
+  font-size: 0.6vw!important;
+  font-weight: 300;
+  padding: .2vw .8vw;
+  margin-top: .5vw;
 }
 
 .timeline-footer ul img {
@@ -1395,7 +1425,7 @@ h6 {
     padding: 8vw 0 12.6vw 0;
   }
 
-  .timeline-footer h2 {
+  .timeline-footer .container > h2 {
     margin-bottom: 5.3vw;
   }
 
@@ -1416,6 +1446,25 @@ h6 {
 
   .timeline-footer ul img {
     width: 100%;
+  }
+
+  .timeline-footer ul .text {
+    padding-right: 4vw;
+    padding-bottom: 2.5vw;
+  }
+
+  .timeline-footer ul p {
+    font-size: 3vw!important;
+  }
+  
+  .timeline-footer ul h2 {
+    font-size: 5vw!important;
+  }
+  
+  .timeline-footer ul .btn {
+    font-size: 3vw!important;
+    padding: .5vw 1.6vw;
+    margin-top: 1.5vw;
   }
 }
 
@@ -1975,7 +2024,7 @@ h6 {
   margin-top: auto;
 }
 
-.diy-footer h2 {
+.diy-footer .container > h2 {
   text-align: center;
   margin-bottom: 1vw;
 }
@@ -1986,8 +2035,36 @@ h6 {
   justify-content: center;
 }
 
+.diy-footer ul li {
+  position: relative;
+}
+
 .diy-footer ul li:not(:last-child) {
   margin-left: .75vw;
+}
+
+.diy-footer ul .text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: white;
+  padding-right: 0.83vw;
+  padding-bottom: 0.41vw;
+}
+
+.diy-footer ul p {
+  font-size: 0.62vw!important;
+}
+
+.diy-footer ul h2 {
+  font-size: 1.0vw!important;
+}
+
+.diy-footer ul .btn {
+  font-size: 0.6vw!important;
+  font-weight: 300;
+  padding: .2vw .8vw;
+  margin-top: .5vw;
 }
 
 .diy-footer ul img {
@@ -1999,7 +2076,7 @@ h6 {
     padding: 8vw 0 12.6vw 0;
   }
 
-  .diy-footer h2 {
+  .diy-footer .container > h2 {
     margin-bottom: 5.3vw;
   }
 
@@ -2020,6 +2097,25 @@ h6 {
 
   .diy-footer ul img {
     width: 100%;
+  }
+
+  .diy-footer ul .text {
+    padding-right: 4vw;
+    padding-bottom: 2.5vw;
+  }
+
+  .diy-footer ul p {
+    font-size: 3vw!important;
+  }
+  
+  .diy-footer ul h2 {
+    font-size: 5vw!important;
+  }
+  
+  .diy-footer ul .btn {
+    font-size: 3vw!important;
+    padding: .5vw 1.6vw;
+    margin-top: 1.5vw;
   }
 }
 
@@ -2180,9 +2276,11 @@ h6 {
 ================================================== */
 .trivia-footer {
   padding: 1.8vw 0 3.6vw 0;
+  background-color: white;
+  margin-top: auto;
 }
 
-.trivia-footer h2 {
+.trivia-footer .container > h2 {
   text-align: center;
   margin-bottom: 1vw;
 }
@@ -2193,8 +2291,36 @@ h6 {
   justify-content: center;
 }
 
+.trivia-footer ul li {
+  position: relative;
+}
+
 .trivia-footer ul li:not(:last-child) {
   margin-left: .75vw;
+}
+
+.trivia-footer ul .text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: white;
+  padding-right: 0.83vw;
+  padding-bottom: 0.41vw;
+}
+
+.trivia-footer ul p {
+  font-size: 0.62vw!important;
+}
+
+.trivia-footer ul h2 {
+  font-size: 1.0vw!important;
+}
+
+.trivia-footer ul .btn {
+  font-size: 0.6vw!important;
+  font-weight: 300;
+  padding: .2vw .8vw;
+  margin-top: .5vw;
 }
 
 .trivia-footer ul img {
@@ -2206,7 +2332,7 @@ h6 {
     padding: 8vw 0 12.6vw 0;
   }
 
-  .trivia-footer h2 {
+  .trivia-footer .container > h2 {
     margin-bottom: 5.3vw;
   }
 
@@ -2227,6 +2353,25 @@ h6 {
 
   .trivia-footer ul img {
     width: 100%;
+  }
+
+  .trivia-footer ul .text {
+    padding-right: 4vw;
+    padding-bottom: 2.5vw;
+  }
+
+  .trivia-footer ul p {
+    font-size: 3vw!important;
+  }
+  
+  .trivia-footer ul h2 {
+    font-size: 5vw!important;
+  }
+  
+  .trivia-footer ul .btn {
+    font-size: 3vw!important;
+    padding: .5vw 1.6vw;
+    margin-top: 1.5vw;
   }
 }
 
