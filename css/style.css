@@ -926,7 +926,21 @@ h6 {
   position: relative;
 }
 
-.virtual-tour-page .text {
+.virtual-tour-page .img {
+  position: relative;
+}
+
+.virtual-tour-page .img,
+.virtual-tour-page .img img {
+  width: 100%;
+}
+
+.virtual-tour-page h1 {
+  color: white;
+  line-height: 1;
+}
+
+.virtual-tour-page .button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -936,13 +950,72 @@ h6 {
   width: 100%;
 }
 
+.virtual-tour-page.zero .text {
+  position: absolute;
+  top: 71%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.virtual-tour-page.classic .text {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.virtual-tour-page .text .play-btn {
+  cursor: pointer;
+}
+
+.virtual-tour-page.zero .text .play-btn {
+  width: 6.77vw;
+  margin-top: 2.5vw;
+}
+
+.virtual-tour-page.classic .text .play-btn {
+  width: 8vw;
+  margin-top: 2.5vw;
+}
+
 @media (max-width: 1023.98px) {
   .virtual-tour-page {
     min-height: calc(100vh - 13vw);
   }
 
-  .virtual-tour-page .text {
+  .virtual-tour-page .button {
     bottom: 10vw;
+  }
+
+  .virtual-tour-page.zero .text {
+    top: 80%;
+    left: 78%;
+    width: 40%;
+  }
+
+  .virtual-tour-page.classic .text {
+    top: 58%;
+    left: 50%;
+  }
+  
+  .virtual-tour-page.zero .text .play-btn {
+    width: 17.3vw;
+    margin-top: 2.5vw;
+  }
+
+  .virtual-tour-page.classic .text .play-btn {
+    width: 26.6vw;
+    margin-top: 3.5vw;
   }
 }
 
