@@ -1806,6 +1806,14 @@ h6 {
   margin: 0 auto 1vw auto;
 }
 
+.diy-article .text p {
+  font-size: 1.3vw!important;
+}
+
+.diy-article .text h2 {
+  font-size: 1.56vw!important;
+}
+
 .diy-article h2 {
   margin: .75vw 0;
 }
@@ -1876,6 +1884,14 @@ h6 {
 
   .diy-article-video .shadow-img {
     margin-top: 1.33vw;
+  }
+
+  .diy-article .text p {
+    font-size: 3.33vw!important;
+  }
+
+  .diy-article .text h2 {
+    font-size: 4vw!important;
   }
 }
 
