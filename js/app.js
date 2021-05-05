@@ -155,3 +155,69 @@ function setupFlip(tick) {
     }
   });
 }
+
+/* #Questionaire 3 Range Slider
+======================================================= */
+var questionaire3RS = document.querySelector('.questionaire-3 .range');
+
+if (questionaire3RS) {
+  noUiSlider.create(questionaire3RS, {
+    range: {
+      'min': 1,
+      'max': 10
+    },
+    step: 1,
+    start: 1,
+    behaviour: 'tap-drag',
+    pips: {
+      mode: 'steps',
+      stepped: true,
+      density: 10
+    }
+  });
+}
+
+/* #Questionaire 5 Range Slider
+======================================================= */
+var questionaire5RS = document.querySelector('.questionaire-5 .range');
+
+if (questionaire5RS) {
+  noUiSlider.create(questionaire5RS, {
+    range: {
+      'min': 1,
+      'max': 10
+    },
+    step: 1,
+    start: 1,
+    behaviour: 'tap-drag',
+    pips: {
+      mode: 'steps',
+      stepped: true,
+      density: 10
+    }
+  });
+}
+
+/* #Questionaire 6 Range Sliders
+======================================================= */
+var questionaire6RS = document.querySelectorAll('.questionaire-6 .range');
+
+if (questionaire6RS) {
+
+  questionaire6RS.forEach((questionaire) => {
+    noUiSlider.create(questionaire, {
+      range: {
+        'min': 1,
+        'max': 5
+      },
+      step: 1,
+      start: 1,
+      behaviour: 'tap-drag',
+      pips: {
+        mode: 'steps',
+        stepped: true,
+        density: 100
+      }
+    });
+  });
+}
