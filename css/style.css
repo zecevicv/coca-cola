@@ -2571,7 +2571,7 @@ h6 {
 /* #Post Card
 ================================================== */
 .post-card {
-  min-height: calc(100vh - 3.17vw);
+  min-height: calc(100vh - 3vw);
   background-color: #ca1b21;
 }
 
@@ -2775,6 +2775,7 @@ h6 {
   height: 3.75vw;
   border-radius: 500px;
   font-size: 1.3vw;
+  overflow: hidden;
 }
 
 .post-card-step-1 input::placeholder {
@@ -2821,7 +2822,7 @@ h6 {
 }
 
 .post-card-step-3 h2 {
-  margin-bottom: 0;
+  margin-bottom: 1.5vw;
 }
 
 .post-card-step-3 .text-area {
@@ -2830,12 +2831,17 @@ h6 {
 }
 
 .post-card-step-3 .text-area p {
-  border-bottom: 0.15vw solid white;
-  height: 2.6vw;
+  border: 0.15vw solid white;
+  height: 1.9vw;
   width: 100%;
   overflow: hidden;
   display: flex;
   align-items: flex-end;
+  border-radius: 500px;
+}
+
+.post-card-step-3 .text-area p:not(:last-child) {
+  margin-bottom: 0.73vw;
 }
 
 .post-card-step-3 .btn-area {
@@ -2860,13 +2866,21 @@ h6 {
     width: 75%;
   }
 
+  .post-card-step-3 h2 {
+    margin-bottom: 4vw;
+  }
+
   .post-card-step-3 .text-area {
     margin-bottom: 7.3vw;
   }
   
   .post-card-step-3 .text-area p {
     border-bottom: 0.4vw solid white;
-    height: 8vw;
+    height: 6vw;
+  }
+
+  .post-card-step-3 .text-area p:not(:last-child) {
+    margin-bottom: 1.8vw;
   }
 
   .post-card-step-3 .btn-area {
@@ -3019,28 +3033,25 @@ h6 {
 }
 
 .post-card-social {
-  text-align: center;
   margin-top: 2vw;
   margin-bottom: 3vw;
-}
-
-.post-card-social ul {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  margin-top: .75vw;
-  margin-bottom: 3.65vw;
+  align-items: center;
 }
 
-.post-card-social ul li:not(:last-child) {
-  margin-left: 1.8vw;
+.post-card-social a {
+  width: 100%;
 }
 
-.post-card-social img {
-  width: 3.125vw;
-  height: 3.125vw;
-  object-fit: contain;
-  object-position: center;
+.post-card-social a img {
+  width: 1.5vw;
+  margin-left: .5vw;
+}
+
+.post-card-social a:first-child {
+  margin-bottom: 2vw;
 }
 
 .post-card-questionaire {
@@ -3101,22 +3112,17 @@ h6 {
   }
 
   .post-card-social {
-    margin-top: 4.6vw;
+    margin-top: 10vw;
     margin-bottom: 14.6vw;
   }
-  
-  .post-card-social ul {
-    margin-top: 4.66vw;
-    margin-bottom: 13vw;
+
+  .post-card-social a:first-child {
+    margin-bottom: 5.3vw;
   }
   
-  .post-card-social ul li:not(:last-child) {
-    margin-left: 6.66vw;
-  }
-  
-  .post-card-social img {
-    width: 12vw;
-    height: 12vw;
+  .post-card-social a img {
+    width: 5vw;
+    margin-left: 2vw;
   }
   
   .post-card-questionaire .text {
